@@ -1,0 +1,2 @@
+pict.exe "triangle.txt" > triangleSanOption.txt
+pict.exe "triangle.txt" > triangleAvecOption.txt /o:3
