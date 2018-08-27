@@ -1,0 +1,81 @@
+package test;
+
+import static org.junit.Assert.*;
+import main.Calculator;
+import main.CalculatorImpl;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculatorImplTest {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testMultiply() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDivide() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAdd() {
+		Calculator calc = new CalculatorImpl();
+		int a, b, res;
+		a = 0;
+		b = 0;
+		res = a + b;
+		assertTrue("a et b positif a =" +a +"b = " +b +"res = "+res,calc.add(a, b) == res);
+		a = 5;
+		b = 5;
+		res = a + b;
+		assertTrue("a nul",calc.add(a, b) == res);
+		a = 5;
+		b = 0;
+		res = a + b;
+		assertTrue("b nul",calc.add(a, b) == res);
+		a = 0;
+		b = 0;
+		res = a + b;
+		assertTrue("a et b nuls",calc.add(a, b) == res);
+		a = -5;
+		b = 5;
+		res = a + b;
+		assertTrue("a négatif",calc.add(a, b) == res);
+		a = 5;
+		b = -5;
+		res = a + b;
+		assertTrue("b négatif",calc.add(a, b) == res);
+		a = -5;
+		b = -5;
+		res = a + b;
+		assertTrue("a et b négatif",calc.add(a, b) == res);
+
+	}
+
+	@Test
+	public void testSubstract() {
+		fail("Not yet implemented");
+	}
+
+}

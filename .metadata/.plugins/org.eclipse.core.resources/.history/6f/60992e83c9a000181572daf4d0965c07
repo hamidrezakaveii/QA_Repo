@@ -1,0 +1,11 @@
+package main;
+
+public class Triangle implements InterfaceTriangre {
+
+	@Override
+	public int Tritype(double i, double j, double k) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

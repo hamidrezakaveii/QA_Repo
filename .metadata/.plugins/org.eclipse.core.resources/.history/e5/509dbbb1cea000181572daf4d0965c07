@@ -1,0 +1,52 @@
+package test;
+
+import static org.junit.Assert.*;
+import main.Triangle;
+import main.InterfaceTriangle;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class TriangleTest {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testTritype() {
+		InterfaceTriangle tri = new Triangle();
+		double a, b, c;
+		int res;
+		//Cas de test : a négatif, b positif et c positif
+		a = -5; b = 5; c = 4; res= 3;
+		assertTrue("Cas de test : a négatif.\na = " + a + "\nb = " + b + "\nRésultatsattendus : " + res+ "\nRésultatsobtenus : " + tri.Tritype(a, b, c), tri.Tritype(a, b, c) == res); 
+		
+		a = 5; b = -5; c = 4; res= 3;
+		assertTrue("Cas de test : a négatif.\na = " + a + "\nb = " + b + "\nRésultatsattendus : " + res+ "\nRésultatsobtenus : " + tri.Tritype(a, b, c), tri.Tritype(a, b, c) == res); 
+		
+		a = 5; b = 5; c = -4; res= 3;
+		assertTrue("Cas de test : a négatif.\na = " + a + "\nb = " + b + "\nRésultatsattendus : " + res+ "\nRésultatsobtenus : " + tri.Tritype(a, b, c), tri.Tritype(a, b, c) == res); 
+		
+		a = 5; b = 5; c = 5; res= 3;
+		assertTrue("Cas de test : a négatif.\na = " + a + "\nb = " + b + "\nRésultatsattendus : " + res+ "\nRésultatsobtenus : " + tri.Tritype(a, b, c), tri.Tritype(a, b, c) == res); 
+		
+
+	} 
+	}
+
