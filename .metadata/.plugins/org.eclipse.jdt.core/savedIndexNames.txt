@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+H:\Section 4\828 - Ass. Qualite\EclipseJunit\.metadata\.plugins\org.eclipse.jdt.core
+1173505.index
+1331282512.index
